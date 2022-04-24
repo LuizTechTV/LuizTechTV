@@ -1,0 +1,195 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Maxlaser Bedwars", "Ocean")
+
+-- Tabs
+
+local Tab1 = Window:NewTab("Example")
+local Tab1Section = Tab1:NewSection("Bedwars")
+
+-- Buttons/Windows/Idk
+
+Tab1Section:NewButton("SoftBed Gui", "local script", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ELCkygpv", true))()
+end)
+Tab1Section:NewButton("Inf yield Fixed", "local script", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+Tab1Section:NewSlider("Speed", "Sussy Speed", 250, 120, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end)
+Tab1Section:NewButton("Bypass anticheat", "local script", function()
+   local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    wait(1)
+    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Bedwars OP V2 Script";
+    Text = "Made by JN HH Gaming"; -- what the text says (ofc)
+    Duration = 60;
+})
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Enjoy";
+    Text = "Don't Forget to Subscribe JN HH Gaming"; -- what the text says (ofc)
+    Duration = 60;
+})
+
+-- Gui to Lua
+-- Version: 3.
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(39, 15, 245)
+Main.Position = UDim2.new(0.363293529, 0, 0.28638497, 0)
+Main.Size = UDim2.new(0, 300, 0, 154)
+Main.Style = Enum.FrameStyle.ChatRed
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(17, 1, 1)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.025588274, 0, -0.0890700519, 0)
+TextLabel.Size = UDim2.new(0, 250, 0, 30)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Bypass Anti-Cheat By JN HH Gaming"
+TextLabel.TextColor3 = Color3.fromRGB(245, 16, 16)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 12.000
+TextLabel.TextWrapped = true
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(17, 1, 1)
+TextButton.Position = UDim2.new(0.136470661, 0, 0.458670378, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 58)
+TextButton.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+TextButton.Font = Enum.Font.SciFi
+TextButton.Text = "Click To Activate"
+TextButton.TextColor3 = Color3.fromRGB(21, 235, 78)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+ while true do wait() game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 23 end
+Walkspeed()
+end)
+-- Scripts:
+
+local function LASGYB_fake_script() -- ScreenGui.Script 
+	local script = Instance.new('Script', ScreenGui)
+
+	frame = script.Parent.Main -- Take out {}s, and put name of frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(LASGYB_fake_script)()
+
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+
+shared.enabled = w
+game:GetService("RunService").heartbeat:connect(function()
+if not shared.enabled then return end
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.GroundHit:FireServer(workspace.Map.Blocks,1645488277.345853)
+wait()
+end)
+end)
+
+Tab1Section:NewButton("Old Maxlaser ui", "local script", function()
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+
+local w = library:CreateWindow("Maxlaser All Games v2") -- Creates the window
+
+local b = w:CreateFolder("Maxlaser_Gui v2") -- Creates the folder(U will put here your buttons,etc)
+
+b:Label("Maxlaser_Games",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+b:Button("Bedwars Gui",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ELCkygpv", true))()
+end)
+b:Button("Pet Simulator X",function()
+    loadstring(game:HttpGet"https://scriptblox.com/raw/SAZA-HUB_496")()
+end)
+
+b:Button("Arsenal",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/arsenal-hub/main/Arsenal%20GamingScripter", true))()
+end)
+b:Button("Youtube Simlator",function()
+    
+loadstring(game:HttpGet("https://pastebin.com/raw/4R4pX6Kq"))()
+end)
+b:Button("Tower of Hell Gui",function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub", true))()
+end)
+b:Button("Nuker Gui",function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
+end)
+b:Button("Fe Fly",function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+end)
+b:Button("mm2",function()
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/16d946bfe0a0ed98a8e32de362fd4217/raw/0681fa979da042841f4e71a52490fdc3a2a16376/cac", true))()
+end)
+b:Button("Blox Fruits",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+b:Button("Youtube Life",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BunnyCat1/Games/main/YoutubeLife"))()
+end)
+
+b:Button("Vape bedwars",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+b:Button("Ultra Power Tycoon",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/6UwPt11f"))()    
+end)
+
+b:Button("Brookhaven",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()  
+end)
+b:Button("Prison Life Admin",function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+end)
+b:DestroyGui()
+
+
+--[[
+How to refresh a dropdown:
+1)Create the dropdown and save it in a variable
+local yourvariable = b:Dropdown("Hi",yourtable,function(a)
+    print(a)
+end)
+2)Refresh it using the function
+yourvariable:Refresh(yourtable)
+How to refresh a label:
+1)Create your label and save it in a variable
+local yourvariable = b:Label("Pretty Useless NGL",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(69,69,69);
+})
+2)Refresh it using the function
+yourvariable:Refresh("Hello") It will only change the text ofc
+]]
+end)

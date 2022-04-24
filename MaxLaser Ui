@@ -1,9 +1,9 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("xro", "Synapse")
+local Window = Library.CreateLib("Luiz Tech Untitled Hood", "Synapse")
 local Tab = Window:NewTab("Cash")
 local Section = Tab:NewSection("Cash")
 
-
+----DO NOT STEAL THIS GUI HIGH CREDITS TO ME
 
 
 local Workspace = game:GetService("Workspace")
